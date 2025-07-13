@@ -17,20 +17,7 @@ export const options = {
 }
 
 export default function() {
-    const url = "http://localhost:3000/login";
-
-    console.log(postLogin)
-
-    //requisition body
-    const payload = JSON.stringify(postLogin);
-
-    const params = {
-        headers: {
-            'Content-Type': 'application/json', 
-        },
-    };
-
-    const response = http.post(url, payload, params);
+    
     
     check(response, {
         'Validar Status 200': (resp) => resp.status === 200,
